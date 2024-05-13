@@ -19,16 +19,27 @@
         <p>Never use an insecure password again.</p>
       </div>
       <div class="generate-btn">
-        <button class="generate-pwrd" id="generate-pwrd">
+        <button
+          class="generate-pwrd"
+          id="generate-pwrd"
+          onclick="generateRandomPassword()"
+        >
           Generate passwords
         </button>
         <label for="length">Password Length</label>
-        <input type="text" name="pwrdNr" id="pwrd-nr" autocomplete="off" />
+        <input
+          type="number"
+          name="pwrd-nr"
+          id="pwrd-length"
+          value="10"
+          min="5"
+          max="25"
+        />
       </div>
-      <div class="password-btn">
-        <hr />
-        <button id="password-btn1"></button>
-        <button id="password-btn2"></button>
+      <hr />
+      <div class="password-wraper">
+        <div id="password-one" onclick="copyPassword()"></div>
+        <div id="password-two" onclick="copySecondPassword()"></div>
       </div>
     </div>
     <script src="js/app.js"></script>
