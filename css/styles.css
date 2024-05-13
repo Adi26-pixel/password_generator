@@ -4,7 +4,7 @@
 color
 ===============
 */
-  --backrground-clr: #1f2937;
+  --background-clr: #1f2937;
   --primary-clr: #4adf86;
   --secondary-clr: #ffffff;
   --third-clr: #d5d4d8;
@@ -17,4 +17,102 @@ color
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background: var(--background-clr);
+  font-family: var(--primary-font);
+}
+
+.container {
+  margin: 200px auto;
+  width: 550px;
+  height: 550px;
+  padding: 50px;
+}
+
+.hero-section {
+  margin-bottom: 50px;
+}
+
+h1 {
+  color: var(--secondary-clr);
+  font-weight: 800;
+  font-size: 40px;
+}
+
+.color-h1 {
+  color: var(--primary-clr);
+}
+
+p {
+  color: var(--third-clr);
+  font-size: 24px;
+  font-weight: 200;
+}
+
+.generate-btn {
+  margin-bottom: 40px;
+}
+
+.generate-pwrd {
+  padding: 9px 15px;
+  background: var(--primary-clr);
+  color: var(--secondary-clr);
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  border-radius: 6px;
+}
+
+.generate-pwrd:hover {
+  background: #064e3b;
+  font-weight: 700;
+}
+
+label {
+  color: var(--secondary-clr);
+  margin-left: 60px;
+  margin-right: 5px;
+  font-weight: 700;
+}
+
+#pwrd-nr {
+  background: var(--forth-clr);
+  border: none;
+  border-radius: 6px;
+  padding: 9px 15px;
+  height: 39px;
+  width: 50px;
+  color: var(--secondary-clr);
+}
+
+hr {
+  height: 2px;
+  width: 98%;
+  background: var(--forth-clr);
+  border: none;
+}
+
+#password-btn1,
+#password-btn2 {
+  margin-top: 35px;
+  height: 39px;
+  width: 211px;
+  background: var(--forth-clr);
+  border: none;
+  border-radius: 6px;
+  padding: 4px 15px;
+  color: var(--primary-clr);
+  font-weight: 500;
+}
+
+#password-btn1 {
+  margin-right: 15px;
+}
+
+#password-btn1:hover,
+#password-btn2:hover {
+  background: black;
+  font-weight: 700;
 }
